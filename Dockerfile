@@ -11,3 +11,5 @@ RUN echo "catch_workers_output = yes" >> /etc/php5/fpm/php-fpm.conf
 
 # Enable php by default
 ADD default.conf /etc/nginx/conf.d/default.conf
+
+CMD service php5-fpm start && nginx -g "daemon off;"
