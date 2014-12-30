@@ -17,3 +17,9 @@ To start this container on port 80 and 443
 Another option is to add your custom nginx configuration by mounting it to `/etc/nginx/sites-enabled/`, you can do so as such
 
 	docker run -d p 80:80 -p 443:443 -v <sites-enabled dir>:/etc/nginx/sites-enabled simplyintricate/nginx
+
+# Advanced Options
+
+## SSL Certificates
+
+You may choose to add the certificate and private key for your site to the nginx. In this case, you should override the `default.conf` file to include the necessary ssl directives to enable SSL. You may then either mout the SSL certificates and keys to your host, or add them in.
