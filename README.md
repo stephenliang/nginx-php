@@ -24,8 +24,12 @@ Another option is to add your custom nginx configuration by mounting it to `/etc
 
 You may choose to add the certificate and private key for your site to the nginx. In this case, you should override the `default.conf` file to include the necessary ssl directives to enable SSL. You may then either mout the SSL certificates and keys to your host, or add them in.
 
+# Security
+
+This docker image is re-built weekly to pull in the latest upstream code for security purposes. If for some reason you find that the image is too old (check the build details), please do not use this image.
+
 # Contributing
 
 You can help make this Dockerfile better by contributing at [Github](https://github.com/stephenliang/nginx-php)
 
-If you found this Docker image helpful, send a tip via Bitcoin to 14b9y1Qw17coEkJFaAAvuXpKZLadTeBPw7
+If you found this Docker image helpful, send a tip via Bitcoin to [14b9y1Qw17coEkJFaAAvuXpKZLadTeBPw7](bitcoin:14b9y1Qw17coEkJFaAAvuXpKZLadTeBPw7)
